@@ -12,6 +12,17 @@ app.get('/multiply',(req,res)=>{
         res.send({c});
     }
 });
+app.get('/add',(req,res)=>{
+    var a= req.query.a;
+    var b= req.query.b;
+    var c = parseInt(a)+parseInt(b);
+    if(c>1000){
+        res.send("Error: Number is greater than 1000");
+    }
+    else{
+        res.send({c});
+    }
+});
 
 
 
