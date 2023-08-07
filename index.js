@@ -7,7 +7,7 @@ app.get('/multiply',(req,res)=>{
     var b= req.query.b;
     var c = parseInt(a)*parseInt(b);
     if(isNaN(b||a)){
-        res.send("Error: b value is not a number");
+        res.send("Error: Entered value is not a number");
     }
     else{
         res.send({c});
