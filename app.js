@@ -24,6 +24,16 @@ app.get('/add',(req,res)=>{
     }
 });
 
+app.get('/number', (req, res) => {
+    let number=[]
+    for(i=0;i<5;i++){
+        number[i]=Math.floor(Math.random()*10)+1;
+    }
+
+    res.send(`The Five Random Numbers are ${number}`);
+ });
+
+
 
 
 
